@@ -10,11 +10,11 @@ void printDiagonalSums(int mat[M][N])
     {
         for (int j = 0; j < N; j++)
         {
-            // Condition for principal diagonal
+            
             if (i == j)
                 principal += mat[i][j];
 
-            // Condition for secondary diagonal
+            
             if ((i + j) == (N - 1))
                 secondary += mat[i][j];
         }
@@ -26,7 +26,6 @@ void printDiagonalSums(int mat[M][N])
     printf("%d\n", secondary);
 }
 
-// Driver code
 int main()
 {
     int a[][4] = {{1, 2, 3, 4},
